@@ -1,0 +1,32 @@
+<head>This is head
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<h4>This is body</h4>
+<button type="button" class="btn btn-primary">Primary</button>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
+
+<script src="/js/myscript.js"></script>
+
+
+ <script id="person-template" type="text/x-handlebars-template">
+{{#persons}}
+   <div class="person">
+      <h1>{{name}}</h1>
+      {{#each email}}
+      <h2>{{Private}}</h2>
+      <h2>{{Personal}}</h2>
+      {{/each}}
+      <h3>{{city}}</h3>
+   </div>
+   {{introduceYourself}}
+   {{cocker}}
+{{/persons}}
+</script>
+
+
+</body>
